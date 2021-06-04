@@ -1,16 +1,26 @@
 <template>
-  <li class="bg-green-300 text-green-800 font-semibold">
-    im an income item
+  <li v-for="(income, index) in INCOMES.slice().reverse()"
+      class="bg-green-300 text-green-800 font-semibold rounded mb-2 p-4">
+    <div class="flex flex-row flex-nowrap">
+      <div class="w-8/12">
+        {{ income.name }}
+      </div>
+      <div class="w-4/12 text-right pr-4">
+        {{ income.amount}}
+      </div>
+    </div>
   </li>
 </template>
 
 <script>
-export default {
-name: "IncomeItem",
-  data () {
-  return {
+import {INCOMES} from '../../constants/incomes.js'
 
-    incomes: []
+export default {
+  name: "IncomeItem",
+  data() {
+    return {
+
+      INCOMES: INCOMES
 
     }
 
