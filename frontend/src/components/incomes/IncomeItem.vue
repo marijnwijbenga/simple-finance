@@ -6,7 +6,15 @@
 
 <script>
 export default {
-name: "IncomeItem"
+name: "IncomeItem",
+  data () {
+  return {
+
+    incomes: []
+
+    }
+
+  }
 }
 </script>
 
