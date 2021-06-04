@@ -17,3 +17,4 @@ complex and require a lot of work to setup, while all I want is a simple overvie
 - [ ] Show total balance
 - [ ] Scrutinizer badge code quality
 - [ ] deploy on heroku  
+- [ ] add steps to readme.md to get this repo running locally  
